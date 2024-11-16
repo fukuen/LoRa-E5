@@ -65,7 +65,8 @@ of the transmission times. In this way, you can compare the times changes due to
 
 #define DEFAULT_TIMEOUT   	 3000  //milliseconds to max wait for a command to get a response
 #define DEFAULT_TIMEOUT_ReTx 1000  //milliseconds to max wait for a command to get a response for transferPacketWithConfirmedReTransmission command 
-#define DEFAULT_TIMEWAIT     100  //DO NOT CHANGE: milliseconds to wait after issuing command via serial and not getting an specific response
+//#define DEFAULT_TIMEWAIT     100  //DO NOT CHANGE: milliseconds to wait after issuing command via serial and not getting an specific response
+#define DEFAULT_TIMEWAIT     500  //DO NOT CHANGE: milliseconds to wait after issuing command via serial and not getting an specific response
 
 #define AT_NO_ACK "NO_ACK"  //For not checking the command response in order to send a command error
 /*PARAMETERS FIDEX*/

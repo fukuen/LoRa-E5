@@ -33,9 +33,10 @@
 #include "LoRa-E5.h"
   #if (defined(ESP32)||defined(ESP32S3))
     //#define SerialLoRa_native Serial    //M5Stack ESP32 Camera Module Development Board
-     HardwareSerial SerialLoRa(0);    //M5Stack ESP32 Camera Module Development Board
+    // HardwareSerial SerialLoRa(0);    //M5Stack ESP32 Camera Module Development Board
+     HardwareSerial SerialLoRa(1);    //M5Stack ESP32 Camera Module Development Board
   #endif  
-const char *physTypeStr[10] = {"EU434",        "EU868", "US915", "US915HYBRID",
+const char *physTypeStr[11] = {"EU434",        "EU868", "US915", "US915HYBRID", "US915OLD",
                                "AU915",        "AS923", "CN470", "KR920",
                                "CN470PREQUEL", "STE920"};
 
